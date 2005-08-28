@@ -7,7 +7,7 @@ Summary:	%{_modname} - Tidy HTML Repairing and Parsing
 Summary(pl):	%{_modname} - Czyszczenie, naprawa oraz parsowanie HTML
 Name:		php4-pecl-%{_modname}
 Version:	1.1
-Release:	0.1
+Release:	0.2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
@@ -76,5 +76,6 @@ fi
 
 %files
 %defattr(644,root,root,755)
+%doc %{_modname}-%{version}/{CREDITS,TODO,README}
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/conf.d/%{_modname}.ini
 %attr(755,root,root) %{extensionsdir}/%{_modname}.so
