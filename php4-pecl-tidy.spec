@@ -7,18 +7,17 @@ Summary:	%{_modname} - Tidy HTML Repairing and Parsing
 Summary(pl):	%{_modname} - Czyszczenie, naprawa oraz parsowanie HTML
 Name:		php4-pecl-%{_modname}
 Version:	1.1
-Release:	0.2
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	ecb2d3c62e1d720265a65dfb7e00e081
 URL:		http://pecl.php.net/package/tidy/
-BuildRequires:	libtool
 BuildRequires:	php4-devel
 BuildRequires:	tidy-devel
 BuildRequires:	rpmbuild(macros) >= 1.230
-Requires:	%{_sysconfdir}/conf.d
 %requires_eq_to php4-common php4-devel
+Requires:	%{_sysconfdir}/conf.d
 Obsoletes:	php-pear-%{_modname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,8 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_sysconfdir}/conf.d
 
-cd %{_modname}-%{version}
-%{__make} install \
+%{__make} -C %{_modname}-%{version} install \
 	INSTALL_ROOT=$RPM_BUILD_ROOT
 
 cat <<'EOF' > $RPM_BUILD_ROOT%{_sysconfdir}/conf.d/%{_modname}.ini
