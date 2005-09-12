@@ -14,8 +14,8 @@ Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	ecb2d3c62e1d720265a65dfb7e00e081
 URL:		http://pecl.php.net/package/tidy/
 BuildRequires:	php4-devel
-BuildRequires:	tidy-devel
 BuildRequires:	rpmbuild(macros) >= 1.230
+BuildRequires:	tidy-devel
 %requires_eq_to php4-common php4-devel
 Requires:	%{_sysconfdir}/conf.d
 Obsoletes:	php-pear-%{_modname}
@@ -31,9 +31,9 @@ In PECL status of this package is: %{_status}.
 
 %description -l pl
 Tidy jest dowi±zaniem do narzêdzia "Tidy HTML clean and repair", które
-pozwala nie tylko na czyszczenie oraz manipulacjê dokumentami HTML, ale
-tak¿e na przemierzanie przez strukturê dokumentu za pomoc± zorientowanej
-obiektowo semantyki silnika Zend Engine 2.
+pozwala nie tylko na czyszczenie oraz manipulacjê dokumentami HTML,
+ale tak¿e na przemierzanie przez strukturê dokumentu za pomoc±
+zorientowanej obiektowo semantyki silnika Zend Engine 2.
 
 To rozszerzenie ma w PECL status: %{_status}.
 
@@ -75,5 +75,5 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc %{_modname}-%{version}/{CREDITS,TODO,README}
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/conf.d/%{_modname}.ini
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/conf.d/%{_modname}.ini
 %attr(755,root,root) %{extensionsdir}/%{_modname}.so
