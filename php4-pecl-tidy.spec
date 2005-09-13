@@ -16,7 +16,7 @@ URL:		http://pecl.php.net/package/tidy/
 BuildRequires:	php4-devel
 BuildRequires:	rpmbuild(macros) >= 1.238
 BuildRequires:	tidy-devel
-%requires_php_extension
+%{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
 Obsoletes:	php-pear-%{_modname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
