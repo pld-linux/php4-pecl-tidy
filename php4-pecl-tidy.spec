@@ -2,12 +2,11 @@
 %define		_status		stable
 %define		_sysconfdir	/etc/php4
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
-
 Summary:	%{_modname} - Tidy HTML Repairing and Parsing
 Summary(pl):	%{_modname} - Czyszczenie, naprawa oraz parsowanie HTML
 Name:		php4-pecl-%{_modname}
 Version:	1.1
-Release:	2
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
