@@ -13,7 +13,7 @@ Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	8c1c92d9386c56d483b1115d207c0293
 URL:		http://pecl.php.net/package/tidy/
 BuildRequires:	php4-devel
-BuildRequires:	rpmbuild(macros) >= 1.254
+BuildRequires:	rpmbuild(macros) >= 1.322
 BuildRequires:	tidy-devel
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
