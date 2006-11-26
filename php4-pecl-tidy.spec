@@ -6,7 +6,7 @@ Summary:	%{_modname} - Tidy HTML Repairing and Parsing
 Summary(pl):	%{_modname} - Czyszczenie, naprawa oraz parsowanie HTML
 Name:		php4-pecl-%{_modname}
 Version:	1.2
-Release:	1
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
@@ -17,6 +17,7 @@ BuildRequires:	rpmbuild(macros) >= 1.322
 BuildRequires:	tidy-devel
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
+Provides:	php(tidy)
 Obsoletes:	php-pear-%{_modname}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
