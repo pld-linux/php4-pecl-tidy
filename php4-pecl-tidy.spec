@@ -3,7 +3,7 @@
 %define		_sysconfdir	/etc/php4
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
 Summary:	%{_modname} - Tidy HTML Repairing and Parsing
-Summary(pl):	%{_modname} - Czyszczenie, naprawa oraz parsowanie HTML
+Summary(pl.UTF-8):   %{_modname} - Czyszczenie, naprawa oraz parsowanie HTML
 Name:		php4-pecl-%{_modname}
 Version:	1.2
 Release:	3
@@ -29,10 +29,10 @@ semantics.
 
 In PECL status of this package is: %{_status}.
 
-%description -l pl
-Tidy jest dowi±zaniem do narzêdzia "Tidy HTML clean and repair", które
-pozwala nie tylko na czyszczenie oraz manipulacjê dokumentami HTML,
-ale tak¿e na przemierzanie przez strukturê dokumentu za pomoc±
+%description -l pl.UTF-8
+Tidy jest dowiÄ…zaniem do narzÄ™dzia "Tidy HTML clean and repair", ktÃ³re
+pozwala nie tylko na czyszczenie oraz manipulacjÄ™ dokumentami HTML,
+ale takÅ¼e na przemierzanie przez strukturÄ™ dokumentu za pomocÄ…
 zorientowanej obiektowo semantyki silnika Zend Engine 2.
 
 To rozszerzenie ma w PECL status: %{_status}.
