@@ -3,7 +3,7 @@
 %define		_sysconfdir	/etc/php4
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
 Summary:	%{_modname} - Tidy HTML Repairing and Parsing
-Summary(pl.UTF-8):   %{_modname} - Czyszczenie, naprawa oraz parsowanie HTML
+Summary(pl.UTF-8):	%{_modname} - Czyszczenie, naprawa oraz parsowanie HTML
 Name:		php4-pecl-%{_modname}
 Version:	1.2
 Release:	3
